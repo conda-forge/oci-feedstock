@@ -1,11 +1,11 @@
-About oci
-=========
+About oci-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oci-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.oracle.com/en-us/iaas/tools/python/latest/index.html
 
 Package license: Apache-2.0 OR UPL-1.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oci-feedstock/blob/main/LICENSE.txt)
 
 Summary: Oracle Cloud Infrastructure Python SDK
 

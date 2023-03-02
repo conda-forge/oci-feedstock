@@ -1,5 +1,5 @@
 {% set name = "oci" %}
-{% set version = "2.93.0" %}
+{% set version = "2.93.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oci-{{ version }}.tar.gz
-  sha256: fc39e163628b9fa7383da3df2ca396bb2bf9cc54be094cb6f5bf21067c8eb664
+  sha256: 27e24551508ac0079620a39c0c7546dbd27e8e4a21e35243939266ccb1289634
 
 build:
   noarch: python
