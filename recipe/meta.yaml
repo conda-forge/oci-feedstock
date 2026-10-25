@@ -1,13 +1,13 @@
 {% set name = "oci" %}
-{% set version = "2.184.0" %}
+{% set version = "2.189.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oci-{{ version }}.tar.gz
-  sha256: 19742d0fdd27947daafd2cfea4db31ad585fde379094f41ddb7280109939210e
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/oci-{{ version }}.tar.gz
+  sha256: 0df9efe9eb0f18e66f1fdf05b46e60c5a77ddfbd46f5b274ad95b2afce4dc687
 
 build:
   noarch: python
@@ -20,15 +20,17 @@ requirements:
     - pip
     - setuptools >70.0.0
   run:
+    - aiohttp >=3.10.11,<4
+    - python-pkcs11 ==0.9.4
     - python >={{ python_min }}
     - certifi
-    - cryptography >=3.2.1,<50.0.0
-    - pyopenssl >=17.5.0,<27.0.0
+    - cryptography >=3.2.1,<51.0.0
+    - pyopenssl >=26.2.0,<27.0.0
     - python-dateutil >=2.5.3,<3.0.0
     - pytz >=2016.10
     - circuitbreaker >=1.3.1,<3.0.0
     - urllib3 >=2.6.3
-    - pyjwt >=2.12.0
+    - pyjwt >=2.15.1
     - crc32c ==2.8.0
 
 test:
